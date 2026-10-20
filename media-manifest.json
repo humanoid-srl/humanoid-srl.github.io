@@ -1,0 +1,442 @@
+{
+  "release_tag": "website-media-2026-10-19-film-v11",
+  "asset": "website-videos.zip",
+  "sha256": "c4ee7cd6961124aea95a8651243c6e1d15b63c5cc5a8cb4bf6c8bee356e41021",
+  "videos": [
+    {
+      "path": "assets/background/matrix.mp4",
+      "bytes": 2019057,
+      "sha256": "64a8a3d04310f3fc6fca7bcafe1032ef24b25b3ad4799a341601507645283470"
+    },
+    {
+      "path": "assets/films/opening-v11.mp4",
+      "bytes": 172993276,
+      "sha256": "f061d0beb5a014d09a61b70f04ccaca542c04660c1309e7b7bdd70fb7cfa1261"
+    },
+    {
+      "path": "assets/hardware/back-backward.mp4",
+      "bytes": 24151760,
+      "sha256": "d364540700f3522543d741d7b869453400918f555a73edb9a7022c30cfdc9138"
+    },
+    {
+      "path": "assets/hardware/back-forward.mp4",
+      "bytes": 9022601,
+      "sha256": "7a23e8555afa1403f197ae5fb616e8edece2ef56d690b43c16416a148104d579"
+    },
+    {
+      "path": "assets/hardware/back-turning.mp4",
+      "bytes": 20298496,
+      "sha256": "c0abfa82b50ea1cec28feb8d3d06cc5addd5c0b65e7cc5086920f24cbea07fb1"
+    },
+    {
+      "path": "assets/hardware/back-workspace.mp4",
+      "bytes": 66862446,
+      "sha256": "25a545182b29a8b399f09cf8da998a47bacdf373e23c91244f5fef513d7ca531"
+    },
+    {
+      "path": "assets/hardware/caren-with-front.mp4",
+      "bytes": 18761837,
+      "sha256": "5e2c070c8e16d0bf19f9a2142af8eef21189ecf029c6ba1221e8487376b8c4d0"
+    },
+    {
+      "path": "assets/hardware/caren-with-side.mp4",
+      "bytes": 7692967,
+      "sha256": "b9d20e4240da8379e3f75d042548ac4af6f2569f8926a754a425709c3a3329c0"
+    },
+    {
+      "path": "assets/hardware/caren-without-front.mp4",
+      "bytes": 16960792,
+      "sha256": "7129f046c62b006a1c542a176f3050f70845a2ccf1296985db699937e240757a"
+    },
+    {
+      "path": "assets/hardware/caren-without-side.mp4",
+      "bytes": 5178904,
+      "sha256": "adfcea29b2af04934f3e12908784fa3bfada72b4b8ec15229cd1f1032f75de0f"
+    },
+    {
+      "path": "assets/hardware/container-loading.mp4",
+      "bytes": 11967376,
+      "sha256": "18191669c7f72a84da5ee179a830e7f82b20be72b724a5f016d81c26d97e5eec"
+    },
+    {
+      "path": "assets/hardware/door-carry.mp4",
+      "bytes": 28322847,
+      "sha256": "ce5e25cf0e8cd92e89731287d392e6a9895b46f98761fe231473650f3ecd06c2"
+    },
+    {
+      "path": "assets/hardware/four-box-front.mp4",
+      "bytes": 13349214,
+      "sha256": "88c0e13939f64d2ab73ece2a7a47c26c69f888149bedecc171ad8348e9f9f442"
+    },
+    {
+      "path": "assets/hardware/four-box-side.mp4",
+      "bytes": 13130600,
+      "sha256": "29c2a1ec4bc4241290371ce3a42226bfcb8b2e3f1415bbbc5248762c8b75d7ec"
+    },
+    {
+      "path": "assets/hardware/high-shelf.mp4",
+      "bytes": 12653230,
+      "sha256": "fec2accc5a1e0eb49ebeef722db399d477dd6d947e260d7dcd4dc3d97e157b0b"
+    },
+    {
+      "path": "assets/hardware/neck-workspace.mp4",
+      "bytes": 48331426,
+      "sha256": "319fba15d7d7bf9e006ebb040aa6fcde79feefb29042f64ecec4228187f03074"
+    },
+    {
+      "path": "assets/hardware/rear-handle-1.mp4",
+      "bytes": 19006460,
+      "sha256": "56b424556456438caba412d8d0229872c7a07193ca40fc9ad5eb55bb25e0b251"
+    },
+    {
+      "path": "assets/hardware/rear-shelf.mp4",
+      "bytes": 14609342,
+      "sha256": "070f54d09bbe18d8bb3bf6e98af17a27bdc20a150cb293aa9095b1d215b292df"
+    },
+    {
+      "path": "assets/hardware/shelf-relay.mp4",
+      "bytes": 14237696,
+      "sha256": "b7accc2ea53d9ca8562174eaefa5493227c359b2beb4288bfaa2f28ceeeecd3d"
+    },
+    {
+      "path": "assets/hardware/shelf-transfer.mp4",
+      "bytes": 12668048,
+      "sha256": "531a1284b084743f74312cd3e6d81162637d18bdddd1feb4c1b57c438a28d41c"
+    },
+    {
+      "path": "assets/hardware/table-transport-1.mp4",
+      "bytes": 18538570,
+      "sha256": "cef0a574ca46fdf11d8c403ff8e6b99bfcbd5c38291b70082ac9390da1a66034"
+    },
+    {
+      "path": "assets/hardware/table-transport-3.mp4",
+      "bytes": 13249160,
+      "sha256": "8ceb1d10294b600e8a0908eaf0d5f1b8d150a24d227cc7729e99ee77335bd640"
+    },
+    {
+      "path": "assets/hardware/three-box-front.mp4",
+      "bytes": 13514320,
+      "sha256": "6cd158b6a0b22cffb914fd3c16b7a3f047654224a4d03e1f2b047dcd6de541d1"
+    },
+    {
+      "path": "assets/hardware/three-box-side.mp4",
+      "bytes": 12818163,
+      "sha256": "d10b39d90fe7926ebbaf72facd05210221276996588c9054a0eaca8d4c4f76a7"
+    },
+    {
+      "path": "assets/hardware/two-box-front.mp4",
+      "bytes": 11697662,
+      "sha256": "200358106d240c5b33a6918334159a69c5b0bb5724988fb3f339bf3e99d29b9c"
+    },
+    {
+      "path": "assets/hardware/two-box-side.mp4",
+      "bytes": 12061524,
+      "sha256": "9b055a99af9506fe73190ff83ccf2dd4a647a2827f76084025bb2206a1e65df6"
+    },
+    {
+      "path": "assets/hardware/vision-door.mp4",
+      "bytes": 13467869,
+      "sha256": "9150f07c835f93d989ae123c820660f1ead981f10b22622f84d167aaf376fc82"
+    },
+    {
+      "path": "assets/hardware/vision-high-shelf.mp4",
+      "bytes": 19009508,
+      "sha256": "2ac1d844494ad3ef828ee32dc1801289ecc0e091b4d3d19d8ab7c94eb90b7ba9"
+    },
+    {
+      "path": "assets/hardware/vision-three-box.mp4",
+      "bytes": 23703290,
+      "sha256": "f7c63fe06551346f1a71dda18e9ce921d342cbbdbfa8f96873842cc5f9886d9f"
+    },
+    {
+      "path": "assets/hardware/vision-two-box.mp4",
+      "bytes": 22299204,
+      "sha256": "a2f594c084d9471509ad8fc8dd757f0627a6cc0dbe69af39b3ad536f3b0433ba"
+    },
+    {
+      "path": "assets/hardware/wall-bracing.mp4",
+      "bytes": 11338283,
+      "sha256": "95df56da1a13aca4fecfbc529d85636d9da84a658c349a5ff896e068132e4160"
+    },
+    {
+      "path": "assets/hardware/wall-reach.mp4",
+      "bytes": 11490043,
+      "sha256": "3497605e78c8bcc8ca85c9d667657d77f6d99e98db9084e1bb8c70e4f208be39"
+    },
+    {
+      "path": "assets/hero/back.mp4",
+      "bytes": 574891,
+      "sha256": "a1d62f89b5bb9439e98ee9132d32c5497ed9141fd90a34305808ea0baae39250"
+    },
+    {
+      "path": "assets/hero/neck.mp4",
+      "bytes": 582773,
+      "sha256": "c873759566be9887c3ecc6909233460b6e6ffd1e3768122f98f85908044234dd"
+    },
+    {
+      "path": "assets/hero/workspace_back.mp4",
+      "bytes": 302582,
+      "sha256": "23d44fca9493239b187915ce6c31c32123dcf0a286f24fa68ea45f65ddce37c3"
+    },
+    {
+      "path": "assets/hero/workspace_neck.mp4",
+      "bytes": 236930,
+      "sha256": "561e5ed55da34abdabc4fe9c39af48a3c25090a05696686ecc1dc28d861448f0"
+    },
+    {
+      "path": "assets/lab-notes/autonomy-troubleshooting.mp4",
+      "bytes": 2509803,
+      "sha256": "3ae0a870aceea89546756b8906a848f5ba330095905858b431346f7c78fa1b9d"
+    },
+    {
+      "path": "assets/lab-notes/backarm-troubleshooting.mp4",
+      "bytes": 1295724,
+      "sha256": "6f959be0d91ed1f286fac03169670e38bcc08125ec8925762b843f857023e56a"
+    },
+    {
+      "path": "assets/lab-notes/bench-prototype.mp4",
+      "bytes": 7367973,
+      "sha256": "f98ffdd0506d21e20761adb89ca718b853cb5d016ff46d2d8174e7d3c4317096"
+    },
+    {
+      "path": "assets/lab-notes/door-tests.mp4",
+      "bytes": 4074935,
+      "sha256": "67cb55b5567599371fae403627efb358cbb6eeba0577648ddcd17af005e80444"
+    },
+    {
+      "path": "assets/lab-notes/early-control-failure.mp4",
+      "bytes": 1093577,
+      "sha256": "0752bf6a1abbcaa9a7b64f8cc5cfab70d1d3e0784992d522577770ae752e6547"
+    },
+    {
+      "path": "assets/lab-notes/early-reach.mp4",
+      "bytes": 2900754,
+      "sha256": "f1cbd10b4d453b57aeec199210d7024a0e9cd7157cd62914b473f18ae92c3fe2"
+    },
+    {
+      "path": "assets/lab-notes/humanoid-prototype.mp4",
+      "bytes": 9714951,
+      "sha256": "67f66021126ffe10c05d1e5989cc2c4814c472134c6e6b238436df2db22ab417"
+    },
+    {
+      "path": "assets/lab-notes/motion-checks.mp4",
+      "bytes": 1219650,
+      "sha256": "48e5f5fa694e593523ec2b23a44340ab374036d39fbc94a134d8934f6c359ed8"
+    },
+    {
+      "path": "assets/lab-notes/whole-body-tests.mp4",
+      "bytes": 2806627,
+      "sha256": "2297d8bb774acb5bc968e00e6d7905bf03ee323c27e131501356789add975755"
+    },
+    {
+      "path": "assets/renderings/back-preview.mp4",
+      "bytes": 321484,
+      "sha256": "48797ac3dbb8284c44594e26718cda7ddcabfa1bcd12830b835a7bc997c18620"
+    },
+    {
+      "path": "assets/renderings/back.mp4",
+      "bytes": 4416017,
+      "sha256": "de7f387b7bfc9de80ffee4084d997c916f3ed12dc75a0358953b3a15806c0b33"
+    },
+    {
+      "path": "assets/renderings/caren_contact-preview.mp4",
+      "bytes": 127268,
+      "sha256": "308b3feb6293c2851692f600e8044871841b7444382c41b9fc43d0e2d11361dc"
+    },
+    {
+      "path": "assets/renderings/caren_contact.mp4",
+      "bytes": 2570186,
+      "sha256": "df7220355dae92747a3464da9e0f14bf110c8152f4125d9b292fe561a4052a8e"
+    },
+    {
+      "path": "assets/renderings/coordinated_loading-preview.mp4",
+      "bytes": 154613,
+      "sha256": "a69ba8eb05a4bd990e6239ef6174a1ef02faf21211e4c03481c4b440489e5ccd"
+    },
+    {
+      "path": "assets/renderings/coordinated_loading.mp4",
+      "bytes": 3060092,
+      "sha256": "82ed183ff8a502d4ecfe6925768131db8d12c5cae5e8734678a0fdc683a01b2a"
+    },
+    {
+      "path": "assets/renderings/door_push-preview.mp4",
+      "bytes": 384320,
+      "sha256": "b238f17d1c5ce7279024b3e462edc8f53e0b237fb337929f010e9e0ff6214165"
+    },
+    {
+      "path": "assets/renderings/door_push.mp4",
+      "bytes": 6576361,
+      "sha256": "6908249057f48e6f82bb55e3f30561fb7d376411e59694420e5115b1afa436f1"
+    },
+    {
+      "path": "assets/renderings/downward_relay-preview.mp4",
+      "bytes": 118389,
+      "sha256": "10a6cbe2d0e7725371a8449dffd6c7d39e1f61b45945bace8b77b5af4e30fb6c"
+    },
+    {
+      "path": "assets/renderings/downward_relay.mp4",
+      "bytes": 2085094,
+      "sha256": "80eb3b2f150d12fce684f4bb40ebd133309ebdb51c75ef559408eb150a5d8cad"
+    },
+    {
+      "path": "assets/renderings/high_shelf-preview.mp4",
+      "bytes": 198431,
+      "sha256": "792defe48f0ab64c366a10cc1f31a2213b88d765332a9a4b9a8efa4c7a04090e"
+    },
+    {
+      "path": "assets/renderings/high_shelf.mp4",
+      "bytes": 3360911,
+      "sha256": "e39954f8245cc6a9fb0a190537483e2582d22b0cb24667bcf4dddb3f0f1a27d3"
+    },
+    {
+      "path": "assets/renderings/neck-preview.mp4",
+      "bytes": 319299,
+      "sha256": "3c5810f63aa086b91ca52f7b70949a8a47c85262b809b3a6acd6a851686f26a2"
+    },
+    {
+      "path": "assets/renderings/neck.mp4",
+      "bytes": 4645379,
+      "sha256": "a8cf6f44c665f3627747a2017b0649050674d32a6fd569a8cf1a6421c9764919"
+    },
+    {
+      "path": "assets/renderings/payload_lift-preview.mp4",
+      "bytes": 134071,
+      "sha256": "ca438b98768fa8c55f603eda078a148f2290919e046380a658a76d59b51aaa0b"
+    },
+    {
+      "path": "assets/renderings/payload_lift.mp4",
+      "bytes": 2395594,
+      "sha256": "2b1575bddf71389a6507b1a3c35640e4b4ee66e08a91c0de121a41d4b24c55ed"
+    },
+    {
+      "path": "assets/renderings/rear_book-preview.mp4",
+      "bytes": 130002,
+      "sha256": "d53430acb7dc9c6e690d7151f93beefa6ca4cf113df5cc0c04ce948405c73899"
+    },
+    {
+      "path": "assets/renderings/rear_book.mp4",
+      "bytes": 2033322,
+      "sha256": "949d1df3900bf8363eae58fc74d924b3f1315f03cea0ea050220e18b9e4a4096"
+    },
+    {
+      "path": "assets/renderings/rear_door-preview.mp4",
+      "bytes": 271827,
+      "sha256": "741f19c6ebcb47b7a044474ddf8ad10dac64846775ef10c610ebb097903d572c"
+    },
+    {
+      "path": "assets/renderings/rear_door.mp4",
+      "bytes": 4282859,
+      "sha256": "8780f8eddeea39aa0bb280e37181f534f582fa696fcebf4b39ec32cf085c1219"
+    },
+    {
+      "path": "assets/renderings/screwdriving-preview.mp4",
+      "bytes": 118458,
+      "sha256": "711ff37b8ba1b57c1caded6bbdcd1b58191cd90a197577f7f332aa9c06885792"
+    },
+    {
+      "path": "assets/renderings/screwdriving.mp4",
+      "bytes": 2165829,
+      "sha256": "afa266949443f7e0961bdc61aa637b42a717086f59ed891722d41fc4ebd06ebd"
+    },
+    {
+      "path": "assets/renderings/shelf_relay-preview.mp4",
+      "bytes": 211638,
+      "sha256": "cb9044ec862ba1944c41d0bd93c066204d059a69326ec499c73a9e05600592e2"
+    },
+    {
+      "path": "assets/renderings/shelf_relay.mp4",
+      "bytes": 3770944,
+      "sha256": "fd509a2887537d8a64312ab0092e524df815abfe645a168f358dfb6e8d324e3f"
+    },
+    {
+      "path": "assets/renderings/shelf_transfer-preview.mp4",
+      "bytes": 100513,
+      "sha256": "a78720ed2bb388c8996b3154830266173a641a21c7c0bbbf363e3aca935b74ce"
+    },
+    {
+      "path": "assets/renderings/shelf_transfer.mp4",
+      "bytes": 1865979,
+      "sha256": "104f3bdff4c9e2cf3bf4d6d5b0142fb33974ad80353f2d47bda89ac08ca085ae"
+    },
+    {
+      "path": "assets/renderings/stack_envelop-preview.mp4",
+      "bytes": 151246,
+      "sha256": "32a9d6611185510dd1386a7d5717668e9b258af6f817ba8ba50a82e50f14d2f8"
+    },
+    {
+      "path": "assets/renderings/stack_envelop.mp4",
+      "bytes": 3017303,
+      "sha256": "af8adc22e18b398a8da5008356a51971cf5a1be21c5b9bc1ec267d396ce36d8a"
+    },
+    {
+      "path": "assets/renderings/stack_stabilization-preview.mp4",
+      "bytes": 150067,
+      "sha256": "789ce2389304b0e91a287277a6e6520ae79eea484c7d6c80b6f36e3209e4ff01"
+    },
+    {
+      "path": "assets/renderings/stack_stabilization.mp4",
+      "bytes": 2959470,
+      "sha256": "1b4e50d6c273f7e41511e480613e4ee3a178bf183852668c3eda7f2f350838d8"
+    },
+    {
+      "path": "assets/renderings/table_transport-preview.mp4",
+      "bytes": 480351,
+      "sha256": "0a16c09b2f94b8baf9d17d5e17074178da7e1745a7aaa42af35ef1962bc92efc"
+    },
+    {
+      "path": "assets/renderings/table_transport.mp4",
+      "bytes": 7417852,
+      "sha256": "3ba9c0de5dd15a4f36189e9f61195e9a63764f1e306488a38a5d6b915ba21f84"
+    },
+    {
+      "path": "assets/renderings/wall_bracing-preview.mp4",
+      "bytes": 188492,
+      "sha256": "d865a5f1e8e8e676e3f041b28a33ba5ee7542aae8f5c11e6d430391974b4ee26"
+    },
+    {
+      "path": "assets/renderings/wall_bracing.mp4",
+      "bytes": 3190557,
+      "sha256": "5fa36a135d32eeb90ba506f830c6525c79bd8efa8d29eadfd0f14d078e5c5ff9"
+    },
+    {
+      "path": "assets/renderings/wall_reach-preview.mp4",
+      "bytes": 140932,
+      "sha256": "21287ede523737ff887daef185efc05979a0902464288c6d09238189f667597a"
+    },
+    {
+      "path": "assets/renderings/wall_reach.mp4",
+      "bytes": 2869223,
+      "sha256": "a0b57853d7cf075dfa1d9af9bb683eef2bf7f82d0d19c34635191a978c2f2ea7"
+    },
+    {
+      "path": "assets/renderings/workspace_back-preview.mp4",
+      "bytes": 163255,
+      "sha256": "33358837b29cc1b0c2d01d37eace046839b712fd087436a2da3cb3273f639d3c"
+    },
+    {
+      "path": "assets/renderings/workspace_back.mp4",
+      "bytes": 2968149,
+      "sha256": "df40c33ce2d043ff0e373500e82416dcb3eef4cecb4e7522b5ea409e4ca8c1ba"
+    },
+    {
+      "path": "assets/renderings/workspace_neck-preview.mp4",
+      "bytes": 127867,
+      "sha256": "dcdf0d4289ca5c3dad58b50b77420febae18e0463b5bc686edc305e2f79907c6"
+    },
+    {
+      "path": "assets/renderings/workspace_neck.mp4",
+      "bytes": 2585930,
+      "sha256": "eb3c438df437b68f12964b57095ad9540ee110fe9b6c7c6104aa456a6502c26c"
+    },
+    {
+      "path": "assets/workspaces/back.mp4",
+      "bytes": 2266452,
+      "sha256": "67281c6e904e38edb04ab2939a1546bbf938c654369138e50497ed79b60ed098"
+    },
+    {
+      "path": "assets/workspaces/neck.mp4",
+      "bytes": 2300172,
+      "sha256": "9db33f5bb28b26dbee592c9cc271fe828d8f7aed710336c26ecd8a83c69935d5"
+    }
+  ]
+}

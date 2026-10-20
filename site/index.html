@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Humanoid SRL: Augmenting Humanoids with Supernumerary Limbs</title>
+<meta name="description" content="Humanoid SRL explores how body design and whole-body control expand what robots can do—changing where they can interact and how their limbs share manipulation and support.">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://humanoid-srl.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Humanoid SRL">
+<meta property="og:url" content="https://humanoid-srl.github.io/">
+<meta property="og:title" content="Humanoid SRL: The human form is a starting point">
+<meta property="og:description" content="Humanoid SRL explores how body design and whole-body control expand what robots can do—changing where they can interact and how their limbs share manipulation and support.">
+<meta property="og:image" content="https://humanoid-srl.github.io/assets/images/humanoid-srl-share-square.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="og:image:alt" content="Neck-mounted and back-mounted Humanoid SRL robots side by side on a transparent background.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Humanoid SRL: The human form is a starting point">
+<meta name="twitter:description" content="Humanoid SRL explores how body design and whole-body control expand what robots can do—changing where they can interact and how their limbs share manipulation and support.">
+<meta name="twitter:image" content="https://humanoid-srl.github.io/assets/images/humanoid-srl-share-square.png">
+<meta name="twitter:image:alt" content="Neck-mounted and back-mounted Humanoid SRL robots side by side on a transparent background.">
+<script src="appearance.js"></script>
+<link rel="icon" href="assets/images/humanoid-srl.ico" sizes="any"><link rel="icon" type="image/png" href="assets/images/humanoid-srl-icon.png" sizes="192x192"><link rel="apple-touch-icon" href="assets/images/humanoid-srl-icon.png"><link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="theme.css">
+<script src="data/site-media.js" defer></script><script src="media-dialog.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<div class="reading-backdrop" aria-hidden="true">
+    <video id="reading-background-video" data-src="assets/background/matrix.mp4" poster="assets/background/matrix.jpg" muted loop playsinline preload="none" tabindex="-1" disablepictureinpicture></video>
+</div>
+<a class="skip-link" href="#paper">Skip to the paper</a>
+<section class="opening" id="top" aria-label="Rendered illustrations of Humanoid SRL motions">
+    <div class="video-matrix"><button class="matrix-tile" type="button" data-render="high_shelf"
+    aria-label="Play rendered illustration: High-shelf retrieval">
+    <video data-matrix data-src="assets/renderings/high_shelf-preview.mp4" muted loop playsinline preload="none"
+    poster="assets/posters/render-high_shelf.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="shelf_transfer"
+    aria-label="Play rendered illustration: Front-to-rear shelf transfer">
+    <video data-matrix data-src="assets/renderings/shelf_transfer-preview.mp4" muted loop playsinline preload="none"
+    poster="assets/posters/render-shelf_transfer.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="rear_book"
+    aria-label="Play rendered illustration: Rear shelf organization">
+    <video data-matrix data-src="assets/renderings/rear_book-preview.mp4" muted loop playsinline preload="none"
+    poster="assets/posters/render-rear_book.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="wall_reach"
+    aria-label="Play rendered illustration: Cabinet-supported high-shelf retrieval">
+    <video data-matrix data-src="assets/renderings/wall_reach-preview.mp4" muted loop playsinline preload="none"
+    poster="assets/posters/render-wall_reach.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="wall_bracing"
+    aria-label="Play rendered illustration: Wall bracing while lifting">
+    <video data-matrix data-src="assets/renderings/wall_bracing-preview.mp4" muted loop playsinline preload="none"
+    poster="assets/posters/render-wall_bracing.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="caren_contact"
+    aria-label="Play rendered illustration: CAREN support-contact setup">
+    <video data-matrix data-src="assets/renderings/caren_contact-preview.mp4" muted loop playsinline preload="none"
+    poster="assets/posters/render-caren_contact.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="shelf_relay"
+    aria-label="Play rendered illustration: Upward shelf relay">
+    <video data-matrix data-src="assets/renderings/shelf_relay-preview.mp4" muted loop playsinline preload="none"
+    poster="assets/posters/render-shelf_relay.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="downward_relay"
+    aria-label="Play rendered illustration: Downward shelf relay">
+    <video data-matrix data-src="assets/renderings/downward_relay-preview.mp4" muted loop playsinline preload="none"
+    poster="assets/posters/render-downward_relay.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="workspace_neck"
+    aria-label="Play rendered illustration: Neck-mounted SRL reach demonstration">
+    <video data-matrix data-src="assets/hero/workspace_neck.mp4" muted loop playsinline preload="none"
+    poster="assets/hero/workspace_neck.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="neck"
+    aria-label="Play rendered illustration: Neck-mounted SRL locomotion">
+    <video data-matrix data-src="assets/hero/neck.mp4" muted loop playsinline preload="none"
+    poster="assets/hero/neck.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="back"
+    aria-label="Play rendered illustration: Back-mounted SRL locomotion">
+    <video data-matrix data-src="assets/hero/back.mp4" muted loop playsinline preload="none"
+    poster="assets/hero/back.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="workspace_back"
+    aria-label="Play rendered illustration: Back-mounted SRL reach demonstration">
+    <video data-matrix data-src="assets/hero/workspace_back.mp4" muted loop playsinline preload="none"
+    poster="assets/hero/workspace_back.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="stack_stabilization"
+    aria-label="Play rendered illustration: Three-box top support">
+    <video data-matrix data-src="assets/renderings/stack_stabilization-preview.mp4" muted loop playsinline preload="none"
+    poster="assets/posters/render-stack_stabilization.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="stack_envelop"
+    aria-label="Play rendered illustration: Two-box enveloping support">
+    <video data-matrix data-src="assets/renderings/stack_envelop-preview.mp4" muted loop playsinline preload="none"
+    poster="assets/posters/render-stack_envelop.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="table_transport"
+    aria-label="Play rendered illustration: Collaborative table transport">
+    <video data-matrix data-src="assets/renderings/table_transport-preview.mp4" muted loop playsinline preload="none"
+    poster="assets/posters/render-table_transport.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="door_push"
+    aria-label="Play rendered illustration: Carry a box and push a door">
+    <video data-matrix data-src="assets/renderings/door_push-preview.mp4" muted loop playsinline preload="none"
+    poster="assets/posters/render-door_push.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="rear_door"
+    aria-label="Play rendered illustration: Rear handle actuation with a carried load">
+    <video data-matrix data-src="assets/renderings/rear_door-preview.mp4" muted loop playsinline preload="none"
+    poster="assets/posters/render-rear_door.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="screwdriving"
+    aria-label="Play rendered illustration: Supported pin placement">
+    <video data-matrix data-src="assets/renderings/screwdriving-preview.mp4" muted loop playsinline preload="none"
+    poster="assets/posters/render-screwdriving.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="coordinated_loading"
+    aria-label="Play rendered illustration: Coordinated container loading">
+    <video data-matrix data-src="assets/renderings/coordinated_loading-preview.mp4" muted loop playsinline preload="none"
+    poster="assets/posters/render-coordinated_loading.jpg" aria-hidden="true" tabindex="-1"></video></button><button class="matrix-tile" type="button" data-render="payload_lift"
+    aria-label="Play rendered illustration: Coordinated basket lifting">
+    <video data-matrix data-src="assets/renderings/payload_lift-preview.mp4" muted loop playsinline preload="none"
+    poster="assets/posters/render-payload_lift.jpg" aria-hidden="true" tabindex="-1"></video></button></div>
+    <span class="sr-only" aria-hidden="true">Humanoid SRL</span>
+    <button id="motion-toggle" class="motion-toggle" type="button" aria-label="Pause opening videos" aria-pressed="false">
+        <svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>
+        <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7Z"/></svg>
+    </button>
+</section>
+<div class="page-shell">
+<aside class="section-nav" aria-label="Page contents"><details id="page-contents" open><summary>Contents</summary><nav><ul>
+<li><a href="#paper">Overview</a></li>
+<li><a href="#morphology">Morphology &amp; workspace</a></li><li><a href="#support">Support &amp; stability</a></li>
+<li><a href="#triadic">Triadic coordination</a><ul><li><a href="#reach">Reach-augmented manipulation</a></li><li><a href="#coordination">Coordinated augmentation</a></li></ul></li>
+<li><a href="#dynamic">Dynamic &amp; collaborative augmentation</a></li><li><a href="#vision">Vision-guided autonomy</a></li>
+<li><a href="#summary">Outlook</a></li><li><a href="#behind-the-scenes">Behind the scenes</a></li><li><a href="#citation">BibTeX</a></li></ul></nav></details></aside>
+<main>
+<header id="paper" class="paper-header">
+    <h1><span class="project-name">Humanoid SRL</span><span class="paper-title">Augmenting Humanoids with Supernumerary Limbs<br class="title-break"> for Coordinated Loco-Manipulation</span></h1>
+    <ul class="authors" aria-label="Authors"><li data-author="Fukang Liu"><a href="https://fukangl.github.io/" target="_blank" rel="noopener noreferrer"><span>Fukang Liu<sup class="contribution-mark" aria-label="corresponding author">†</sup></span></a></li><li data-author="Feiyang Wu"><a href="https://feiyangwu.com/" target="_blank" rel="noopener noreferrer"><span>Feiyang Wu</span></a></li><li data-author="Paul Barsa"><a href="https://www.linkedin.com/in/paul-barsa" target="_blank" rel="noopener noreferrer"><span>Paul Barsa<sup class="contribution-mark" aria-label="equal contribution">*</sup></span></a></li><li data-author="Jaehwi Jang"><a href="https://scholar.google.com/citations?user=fPNCtVQAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer"><span>Jaehwi Jang<sup class="contribution-mark" aria-label="equal contribution">*</sup></span></a></li><li data-author="Akshat Jain"><a href="https://akshatjain.org/" target="_blank" rel="noopener noreferrer"><span>Akshat Jain</span></a></li><li data-author="Zhigen Zhao"><a href="https://scholar.google.com/citations?user=0813VhIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer"><span>Zhigen Zhao</span></a></li><li data-author="Yipu Chen"><a href="https://peterchenyipu.github.io/" target="_blank" rel="noopener noreferrer"><span>Yipu Chen</span></a></li><li data-author="Zhaoyuan Gu"><a href="https://scholar.google.com/citations?user=IC9VJpsAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer"><span>Zhaoyuan Gu</span></a></li><li data-author="Nikhil Vemuri"><a href="https://www.linkedin.com/in/nikhil-vemuri-245009242/" target="_blank" rel="noopener noreferrer"><span>Nikhil Vemuri</span></a></li><li data-author="Anshul Chandaliya"><a href="https://www.linkedin.com/in/anshul-chandaliya" target="_blank" rel="noopener noreferrer"><span>Anshul Chandaliya</span></a></li><li data-author="Kaijie Zhu"><a href="http://www.linkedin.com/in/kaijiezhu" target="_blank" rel="noopener noreferrer"><span>Kaijie Zhu</span></a></li><li data-author="Sean Lublinsky"><a href="https://www.linkedin.com/in/sean-lublinsky-3b1a7a199" target="_blank" rel="noopener noreferrer"><span>Sean Lublinsky</span></a></li><li data-author="Matthew Zhu"><a href="https://www.linkedin.com/in/matthew-zhu-ga" target="_blank" rel="noopener noreferrer"><span>Matthew Zhu</span></a></li><li data-author="Tony G Chen"><a href="https://www.tonygchen.com/" target="_blank" rel="noopener noreferrer"><span>Tony G Chen</span></a></li><li data-author="Ye Zhao"><a href="https://me.gatech.edu/faculty/zhao" target="_blank" rel="noopener noreferrer"><span>Ye Zhao<sup class="contribution-mark" aria-label="corresponding author">†</sup></span></a></li></ul>
+    <p class="affiliation">Georgia Institute of Technology</p>
+    <p class="contributions"><span><span class="contribution-mark">*</span> Equal contribution</span><span><span class="contribution-mark">†</span> Corresponding authors</span></p>
+    <nav class="paper-links" aria-label="Publication resources"><a class="paper-button" href="https://arxiv.org/pdf/2610.25628" target="_blank" rel="noopener noreferrer" aria-label="Paper: read Humanoid SRL on arXiv">Paper</a><a class="paper-button" href="#citation">BibTeX</a><a class="paper-button" href="opening-film.html" aria-label="Video: watch the Humanoid SRL opening film">Video</a></nav>
+</header>
+<div class="article-body">
+<section id="opening-story" class="reading-column" aria-labelledby="opening-story-heading">
+    <h2 id="opening-story-heading">The human form is a starting point.</h2>
+    <p>A world designed for people makes the human body a natural starting point for robot design. Yet a body that fits our world need not inherit every constraint of our anatomy. The number and placement of limbs shape where a robot can act, how it supports itself, and which interactions it can sustain together. Humanoid SRL explores what becomes possible when the body is extended and its limbs are coordinated as a whole. A humanoid’s form can be shaped by the capabilities we seek. More broadly, this work points toward an approach to physical AI in which body morphology, physical models, and learning develop together to expand how robots interact with the world.</p>
+</section>
+<section id="abstract" class="reading-column" aria-labelledby="abstract-heading">
+    <p class="tldr"><strong>TL;DR</strong> An additional arm changes <strong>where a humanoid can interact and how its limbs share the work</strong>. Across neck- and back-mounted configurations, Humanoid SRL expands reach and shared workspace, adds environmental support contacts, and enables coordinated manipulation, locomotion, and collaboration. Trajectory optimization provides physically consistent motion guidance, while reinforcement learning supplies whole-body feedback control, together forming a foundation for vision-guided autonomous interaction. The results support viewing humanoids as extensible morphologies whose physical capabilities are shaped jointly by body design and whole-body control.</p>
+    <div class="abstract-preview">
+        <h2 id="abstract-heading">Abstract</h2>
+        <p>Humanoid robots are envisioned to perform diverse human-level tasks through their anthropomorphic morphology. Their dual-arm configuration enables a broad range of everyday actions. Yet, as in humans, this morphology can constrain loco-manipulation<span id="abstract-more"> when both arms are occupied or additional contacts are required beyond their reach. Supernumerary robotic limbs (SRLs) offer a way to extend these capabilities, but their integration requires the added limb to be coordinated with whole-body motion and balance. In this study, we develop and integrate a supernumerary arm into a humanoid platform to investigate how morphological augmentation reshapes its feasible action space. Through quantitative analysis and hardware experiments across two configurations, we show how the additional limb expands whole-body interaction capabilities by enabling manipulation and support to be coordinated beyond the constraints of the native dual-arm configuration. To control this augmented morphology, we leverage model-based trajectory optimization (TO) to generate dynamically feasible motions for goal-conditioned reinforcement learning (RL) controllers. The controllers are trained in simulation and transferred to hardware in a zero-shot manner, enabling coordinated whole-body skills for contact-rich tri-arm loco-manipulation. We further show vision-guided autonomous execution on selected tasks using diffusion policies trained from hardware demonstrations. <strong class="abstract-conclusion">Our findings suggest that humanoid morphology need not be restricted to human-like forms, but can be reimagined as an extensible design space for robotic augmentation.</strong></span></p>
+        <button id="abstract-toggle" class="abstract-toggle" type="button" aria-expanded="false" aria-controls="abstract-more" hidden><span class="abstract-toggle-icon" aria-hidden="true">▸</span><span>Read full abstract</span></button>
+    </div>
+</section>
+<figure id="opening-film" class="opening-film-inline" aria-label="Humanoid SRL opening film">
+    <figcaption>Opening film</figcaption>
+    <video class="opening-film-player" controls controlslist="nodownload" muted playsinline preload="none"
+        width="1920" height="1080" src="assets/films/opening-v11.mp4"
+        poster="assets/films/opening.jpg" aria-label="Play the Humanoid SRL opening film">
+        <a href="opening-film.html">Watch the opening film</a>.
+    </video>
+</figure>
+<hr class="section-rule">
+<div id="overview" class="reading-column">
+<section id="morphology" class="research-section" aria-labelledby="morphology-heading">
+    <h2 id="morphology-heading">Morphology and Workspace</h2>
+    <p>Where an extra limb is attached changes how a humanoid can interact with its surroundings. The neck and back mounts explore <strong>two complementary extensions of the humanoid body</strong>: frontal and overhead access, or rearward and downward access. Each opens new reach and shared workspace where the limbs can take on different roles. Both mounts place the arm’s base close to the torso to limit its effect on balance, while whole-body control coordinates the added limb with standing and walking.</p>
+    <div class="embodiments">
+<div class="embodiment-tabs" role="tablist" aria-label="SRL configuration">
+<button id="tab-neck" role="tab" aria-selected="true" aria-controls="panel-neck" data-tab="neck">Neck-mounted SRL</button>
+<button id="tab-back" role="tab" aria-selected="false" aria-controls="panel-back" data-tab="back" tabindex="-1">Back-mounted SRL</button></div>
+<div id="panel-neck" role="tabpanel" aria-labelledby="tab-neck">
+<p>The neck mount opens space above and ahead of the body, reaching <strong><span class="quantity">2.53 m</span> above the floor</strong> in the nominal standing pose. Sampled reachable volume grows by <strong>50.3%</strong>, from 1.95 to <span class="quantity">2.94 m³</span>. The shared region reachable by at least two arms expands from 0.52 to <span class="quantity">1.43 m³</span>, including <span class="quantity">0.240 m³</span> reachable by all three. This expanded and shared workspace provides a geometric basis for overhead access, handoffs, and coordinated handling of a common object.</p>
+<div class="video-row single"><figure class="experiment"><video id="player-render-orbit-neck" data-embodiment controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/workspaces/neck.mp4" poster="assets/workspaces/neck.jpg" aria-label="3D workspace · 360° camera view"></video>
+        <figcaption>3D workspace · 360° camera view</figcaption></figure></div>
+<div class="video-row"><figure class="experiment"><video id="player-render-neck" data-embodiment controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/renderings/neck.mp4" poster="assets/posters/render-neck.jpg" aria-label="Whole-body locomotion"></video>
+        <figcaption>Whole-body locomotion</figcaption></figure><figure class="experiment"><video id="player-render-workspace_neck" data-embodiment controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/renderings/workspace_neck.mp4" poster="assets/posters/render-workspace_neck.jpg" aria-label="SRL motion in a fixed standing pose"></video>
+        <figcaption>SRL motion in a fixed standing pose</figcaption></figure></div>
+</div>
+<div id="panel-back" role="tabpanel" aria-labelledby="tab-back" hidden>
+<p>The back mount opens rearward and lower space, reaching <strong><span class="quantity">1.05 m</span> backward and <span class="quantity">0.68 m</span> downward</strong> from the pelvis. Sampled reachable volume grows by <strong>42.3%</strong>, from 1.95 to <span class="quantity">2.78 m³</span>. The shared region reachable by at least two arms expands from 0.52 to <span class="quantity">1.26 m³</span>, including <span class="quantity">0.235 m³</span> reachable by all three. These complementary regions create opportunities to combine rearward interaction with an ongoing frontal task, reducing the need to turn or reposition the whole body.</p>
+<div class="video-row single"><figure class="experiment"><video id="player-render-orbit-back" data-embodiment controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/workspaces/back.mp4" poster="assets/workspaces/back.jpg" aria-label="3D workspace · 360° camera view"></video>
+        <figcaption>3D workspace · 360° camera view</figcaption></figure></div>
+<div class="video-row"><figure class="experiment"><video id="player-render-back" data-embodiment controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/renderings/back.mp4" poster="assets/posters/render-back.jpg" aria-label="Whole-body locomotion"></video>
+        <figcaption>Whole-body locomotion</figcaption></figure><figure class="experiment"><video id="player-render-workspace_back" data-embodiment controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/renderings/workspace_back.mp4" poster="assets/posters/render-workspace_back.jpg" aria-label="SRL motion in a fixed standing pose"></video>
+        <figcaption>SRL motion in a fixed standing pose</figcaption></figure></div>
+</div>
+</div>
+    <p>These shared workspaces provide a geometric basis for multi-arm interaction. The hardware demonstrations show how the two mounting configurations extend access around the body, creating opportunities to use the native limbs and SRL in complementary roles.</p>
+    <div class="embodiments hardware-tabs"><div class="embodiment-tabs" role="tablist" aria-label="Hardware workspace configuration"><button id="tab-hardware-neck" role="tab" aria-selected="true" aria-controls="panel-hardware-neck" data-tab="hardware-neck">Neck-mounted SRL</button><button id="tab-hardware-back" role="tab" aria-selected="false" aria-controls="panel-hardware-back" data-tab="hardware-back" tabindex="-1">Back-mounted SRL</button></div><div id="panel-hardware-neck" role="tabpanel" aria-labelledby="tab-hardware-neck"><div class="video-row single"><figure class="experiment"><video id="player-neck-workspace" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/neck-workspace.mp4" poster="assets/posters/neck-workspace.jpg" aria-label="Neck SRL · hardware workspace motion"></video>
+        <figcaption>Neck SRL · hardware workspace motion</figcaption></figure></div></div><div id="panel-hardware-back" role="tabpanel" aria-labelledby="tab-hardware-back" hidden><div class="video-row single"><figure class="experiment"><video id="player-back-workspace" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/back-workspace.mp4" poster="assets/posters/back-workspace.jpg" aria-label="Back SRL · hardware workspace motion"></video>
+        <figcaption>Back SRL · hardware workspace motion</figcaption></figure></div></div></div>
+    <p>Adding a manipulator must also preserve the ability to move. Forward walking, backward walking, and turning on hardware demonstrate whole-body coordination with the back-mounted SRL.</p>
+    <div class="embodiments hardware-tabs"><div class="embodiment-tabs" role="tablist" aria-label="Hardware locomotion motion"><button id="tab-walk-forward" role="tab" aria-selected="true" aria-controls="panel-walk-forward" data-tab="walk-forward">Forward walking</button><button id="tab-walk-backward" role="tab" aria-selected="false" aria-controls="panel-walk-backward" data-tab="walk-backward" tabindex="-1">Backward walking</button><button id="tab-walk-turning" role="tab" aria-selected="false" aria-controls="panel-walk-turning" data-tab="walk-turning" tabindex="-1">Turning</button></div><div id="panel-walk-forward" role="tabpanel" aria-labelledby="tab-walk-forward"><div class="video-row single"><figure class="experiment"><video id="player-back-forward" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/back-forward.mp4" poster="assets/posters/back-forward.jpg" aria-label="Forward walking"></video>
+        <figcaption>Forward walking</figcaption></figure></div></div><div id="panel-walk-backward" role="tabpanel" aria-labelledby="tab-walk-backward" hidden><div class="video-row single"><figure class="experiment"><video id="player-back-backward" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/back-backward.mp4" poster="assets/posters/back-backward.jpg" aria-label="Backward walking"></video>
+        <figcaption>Backward walking</figcaption></figure></div></div><div id="panel-walk-turning" role="tabpanel" aria-labelledby="tab-walk-turning" hidden><div class="video-row single"><figure class="experiment"><video id="player-back-turning" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/back-turning.mp4" poster="assets/posters/back-turning.jpg" aria-label="Turning"></video>
+        <figcaption>Turning</figcaption></figure></div></div></div>
+</section>
+<section id="support" class="research-section" aria-labelledby="support-heading">
+    <h2 id="support-heading">Support and Stability Augmentation</h2>
+    <p>A humanoid handling a load may need its arms for two competing purposes: holding the object and steadying the body. An added limb creates a way to <strong>gain environmental support while keeping both native arms engaged</strong>. This could be valuable when moving supplies or handling materials around fixed equipment, where the robot must maintain its task as balance and posture demands change.</p>
+    <p><strong>Stay engaged when balance is challenged.</strong> In the CAREN experiment, the back-mounted SRL braces against an external frame while the two native arms hold <span class="quantity">2.5 lb</span> payloads. With this contact, the robot tolerates repeated <span class="quantity">10 cm</span> platform perturbations, the experimental safety limit; without SRL support, it loses balance at <span class="quantity">7.5 cm</span>. The additional limb provides support without taking a native arm away from the load.</p>
+    <div class="support-comparison"><section class="support-condition" id="caren-with" aria-labelledby="caren-with-heading"><h3 id="caren-with-heading">With SRL support</h3><div class="video-row"><figure class="experiment"><video id="player-caren-with-side" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/caren-with-side.mp4" poster="assets/posters/caren-with-side.jpg" aria-label="With SRL support · side"></video>
+        <figcaption>With SRL support · side</figcaption></figure><figure class="experiment"><video id="player-caren-with-front" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/caren-with-front.mp4" poster="assets/posters/caren-with-front.jpg" aria-label="With SRL support · front"></video>
+        <figcaption>With SRL support · front</figcaption></figure></div></section><section class="support-condition" id="caren-without" aria-labelledby="caren-without-heading"><h3 id="caren-without-heading">Without SRL support</h3><div class="video-row"><figure class="experiment"><video id="player-caren-without-side" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/caren-without-side.mp4" poster="assets/posters/caren-without-side.jpg" aria-label="Without SRL support · side"></video>
+        <figcaption>Without SRL support · side</figcaption></figure><figure class="experiment"><video id="player-caren-without-front" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/caren-without-front.mp4" poster="assets/posters/caren-without-front.jpg" aria-label="Without SRL support · front"></video>
+        <figcaption>Without SRL support · front</figcaption></figure></div></section></div>
+    <p><strong>Use support to access new working postures.</strong> A load may lie beyond the posture that the feet alone can support. In wall-assisted lifting, the neck-mounted SRL braces against the wall while both native arms handle the payload. This contact supports a forward lean beyond feet-only balance, showing how the surroundings can help the humanoid reach and manipulate from a more extended posture.</p>
+    <div class="video-row single"><figure class="experiment"><video id="player-wall-bracing" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/wall-bracing.mp4" poster="assets/posters/wall-bracing.jpg" aria-label="Wall bracing during payload handling"></video>
+        </figure></div>
+</section>
+<section id="triadic" class="research-section" aria-labelledby="triadic-heading">
+    <h2 id="triadic-heading">Triadic Coordination</h2>
+    <p>Many useful actions require holding, reaching, and stabilizing at the same time. <strong>Three-arm coordination changes how those responsibilities can be shared across the body.</strong> The SRL can reach into another workspace while the native arms remain occupied, or join them around a common object. Trajectory optimization and reinforcement learning coordinate these contacts with whole-body motion and balance, turning the added limb’s geometry into usable interaction capabilities.</p>
+    <section id="reach" class="research-subsection" aria-labelledby="reach-heading">
+        <h3 id="reach-heading">Reach-Augmented Manipulation</h3>
+        <p>Shelves, workstations, and household storage surround a robot; their useful contents are not always directly in front of it. Turning or repositioning can be difficult when space is limited or the arms are already engaged. <strong>Augmented reach lets the body access another region while preserving an existing posture or interaction.</strong> The following examples explore overhead access, transfer around the body, and simultaneous work in front and behind.</p>
+        <div class="task-demo"><p><strong>Bring overhead objects within reach.</strong> Access to overhead storage is useful when an object can be brought back to a person or work surface. The neck-mounted SRL retrieves an item from a tall shelf and delivers it to a seated person, connecting extended reach to an everyday exchange.</p><div class="video-row single"><figure class="experiment"><video id="player-high-shelf" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/high-shelf.mp4" poster="assets/posters/high-shelf.jpg" aria-label="High-shelf retrieval"></video>
+        </figure></div></div><div class="task-demo"><p><strong>Transfer objects without turning the body.</strong> Closely spaced shelves can restrict both whole-body turning and the clearance needed to raise or swing the native arms. The neck-mounted SRL provides another route between the front and rear workspaces. Here, it transfers an object between shelves separated by <span class="quantity">0.5 m</span> while the torso maintains approximately the same heading.</p><div class="video-row single"><figure class="experiment"><video id="player-shelf-transfer" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/shelf-transfer.mp4" poster="assets/posters/shelf-transfer.jpg" aria-label="Front-to-rear shelf transfer"></video>
+        </figure></div></div><div class="task-demo"><p><strong>Separate support from reaching.</strong> Reaching past a barrier can require support as well as access. Here, the native arms brace against a wall while the neck-mounted SRL retrieves an object beyond it. The limbs exchange the roles seen in wall-assisted lifting: the native arms now support the body, and the SRL performs the manipulation.</p><div class="video-row single"><figure class="experiment"><video id="player-wall-reach" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/wall-reach.mp4" poster="assets/posters/wall-reach.jpg" aria-label="Wall-supported reach-around"></video>
+        </figure></div></div><div class="task-demo"><p><strong>Work behind while staying engaged in front.</strong> A robot engaged at a work surface may also need supplies from behind. The back-mounted SRL retrieves and places an object in the rear workspace while the native arms handle another object at the frontal table, demonstrating simultaneous interaction on both sides of the body.</p><div class="video-row single"><figure class="experiment"><video id="player-rear-shelf" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/rear-shelf.mp4" poster="assets/posters/rear-shelf.jpg" aria-label="Rear manipulation"></video>
+        </figure></div></div>
+    </section>
+    <section id="coordination" class="research-subsection" aria-labelledby="coordination-heading">
+        <h3 id="coordination-heading">Coordinated Augmentation</h3>
+        <p>Stocking shelves, packing containers, and handling bulky loads often require more than grasping and lifting. An object may need guidance into place, a receiving container held steady, or an upper layer stabilized. <strong>A third arm lets support, transfer, and stabilization contribute to one shared goal</strong>, with each limb taking responsibility where its contact is most useful.</p>
+        <div class="task-demo"><p><strong>Carry an object through successive workspaces.</strong> Moving an object from low storage to a high shelf requires useful contact throughout the transfer. The native arms acquire and lift the box; the SRL then guides its final placement beyond their practical insertion range. Responsibility passes between limbs as the object moves through their shared workspace.</p><div class="video-row single"><figure class="experiment"><video id="player-shelf-relay" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/shelf-relay.mp4" poster="assets/posters/shelf-relay.jpg" aria-label="Upward shelf relay"></video>
+        </figure></div></div><div class="task-demo"><p><strong>Load a container while holding it.</strong> Packing a held container requires contacts that support it and another contact that moves items. The native arms hold the container while the SRL retrieves an object from an upper shelf and places it inside, allowing loading to proceed without setting the container down.</p><div class="video-row single"><figure class="experiment"><video id="player-container-loading" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/container-loading.mp4" poster="assets/posters/container-loading.jpg" aria-label="Coordinated container loading"></video>
+        </figure></div></div>
+        <p><strong>Support the weight and stabilize the stack.</strong> Lifting a stack requires supporting its weight and controlling its tendency to tip or rotate. In the two-, three-, and four-box demonstrations, the native arms lift the load while the SRL stabilizes it through enveloping support or top contact. The paper’s numerical Ferrari–Canny analysis shows that adding the SRL expands the range of contact locations and friction conditions yielding <strong>force closure</strong> under an idealized rigid-stack contact model: the contacts can collectively counter external forces and torques in any direction. This provides a mechanical basis for sharing lifting and stabilization across the three limbs.</p>
+        <div class="video-row"><figure class="experiment"><video id="player-two-box-front" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/two-box-front.mp4" poster="assets/posters/two-box-front.jpg" aria-label="Two boxes · front"></video>
+        <figcaption>Two boxes · front</figcaption></figure><figure class="experiment"><video id="player-two-box-side" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/two-box-side.mp4" poster="assets/posters/two-box-side.jpg" aria-label="Two boxes · side"></video>
+        <figcaption>Two boxes · side</figcaption></figure></div><div class="video-row"><figure class="experiment"><video id="player-three-box-front" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/three-box-front.mp4" poster="assets/posters/three-box-front.jpg" aria-label="Three boxes · front"></video>
+        <figcaption>Three boxes · front</figcaption></figure><figure class="experiment"><video id="player-three-box-side" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/three-box-side.mp4" poster="assets/posters/three-box-side.jpg" aria-label="Three boxes · side"></video>
+        <figcaption>Three boxes · side</figcaption></figure></div><div class="video-row"><figure class="experiment"><video id="player-four-box-front" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/four-box-front.mp4" poster="assets/posters/four-box-front.jpg" aria-label="Four boxes · front"></video>
+        <figcaption>Four boxes · front</figcaption></figure><figure class="experiment"><video id="player-four-box-side" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/four-box-side.mp4" poster="assets/posters/four-box-side.jpg" aria-label="Four boxes · side"></video>
+        <figcaption>Four boxes · side</figcaption></figure></div>
+    </section>
+</section>
+<section id="dynamic" class="research-section" aria-labelledby="dynamic-heading">
+    <h2 id="dynamic-heading">Dynamic and Collaborative Whole-Body Augmentation</h2>
+    <p>Useful work rarely stays in one place. Carrying materials through a building or moving furniture with a person requires the robot to maintain a load while navigating and interacting with its surroundings. <strong>The SRL makes an additional contact available during transport</strong>, so carrying, environmental interaction, and collaboration can proceed together. Coordinating that contact with walking extends morphological augmentation to tasks that unfold across an environment.</p>
+    <p><strong>Share the load while securing what it carries.</strong> When a person and a humanoid carry a table, their arms are committed to the shared load. The SRL takes responsibility for a loose object on top: it maintains contact with a yoga ball during lifting and walking while the native arms support the table. This illustrates how the robot can contribute an additional stabilizing action within human–robot collaboration.</p>
+    <div class="embodiments hardware-tabs"><div class="embodiment-tabs" role="tablist" aria-label="Collaborative table transport recordings"><button id="tab-transport-1" role="tab" aria-selected="true" aria-controls="panel-transport-1" data-tab="transport-1">Recording 1</button><button id="tab-transport-3" role="tab" aria-selected="false" aria-controls="panel-transport-3" data-tab="transport-3" tabindex="-1">Recording 2</button></div><div id="panel-transport-1" role="tabpanel" aria-labelledby="tab-transport-1"><div class="video-row single"><figure class="experiment"><video id="player-table-transport-1" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/table-transport-1.mp4" poster="assets/posters/table-transport-1.jpg" aria-label="Collaborative table transport · recording 1"></video>
+        </figure></div></div><div id="panel-transport-3" role="tabpanel" aria-labelledby="tab-transport-3" hidden><div class="video-row single"><figure class="experiment"><video id="player-table-transport-3" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/table-transport-3.mp4" poster="assets/posters/table-transport-3.jpg" aria-label="Collaborative table transport · recording 2"></video>
+        </figure></div></div></div>
+    <div class="task-demo"><p><strong>Open a route while keeping hold of the load.</strong> Moving materials through a building can require opening a door when both arms are occupied. After lifting a box, the humanoid walks forward while the neck-mounted SRL pushes the door, preserving the carrying task as the robot establishes a new environmental contact.</p><div class="video-row single"><figure class="experiment"><video id="player-door-carry" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/door-carry.mp4" poster="assets/posters/door-carry.jpg" aria-label="Box carrying and door pushing"></video>
+        </figure></div></div><div class="task-demo"><p><strong>Interact behind the body during transport.</strong> The direction from which a robot can interact also matters during transport. The back-mounted SRL operates a door handle behind the torso while the native arms retain the box. The body then reorients toward the doorway, demonstrating how rearward access can support the continuation of a carrying task.</p><div class="video-row single"><figure class="experiment"><video id="player-rear-handle-1" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/rear-handle-1.mp4" poster="assets/posters/rear-handle-1.jpg" aria-label="Rear handle actuation with a carried load"></video>
+        </figure></div></div>
+</section>
+<section id="vision" class="research-section" aria-labelledby="vision-heading">
+    <h2 id="vision-heading">Vision-Guided Autonomous Control</h2>
+    <p>An extended body needs a way to connect what it sees to where its limbs act. <strong>Whole-body coordination provides the foundation for perception-guided interaction.</strong> For the demonstrated behaviors, task-specific diffusion policies trained on hardware demonstrations use RGB-D and proprioceptive observations to update short-horizon end-effector targets. The TO–RL controllers execute those targets with whole-body feedback, connecting visual guidance to the reach, support, and coordination capabilities above.</p>
+    <div class="task-demo"><p><strong>Guide extended reach through vision.</strong> Visual observations guide the neck-mounted SRL as it retrieves an overhead object and delivers it to a person, connecting access beyond the native arms to an autonomous exchange.</p><div class="video-row single"><figure class="experiment"><video id="player-vision-high-shelf" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/vision-high-shelf.mp4" poster="assets/posters/vision-high-shelf.jpg" aria-label="Autonomous retrieval and human delivery"></video>
+        </figure></div></div><div class="task-demo"><p><strong>Coordinate lifting and stabilization.</strong> Visual targets guide the native arms and SRL through coordinated lifts of two- and three-box stacks. The native arms carry the load while the SRL adds a stabilizing contact, connecting perception to the complementary roles of the three limbs.</p><div class="video-row"><figure class="experiment"><video id="player-vision-two-box" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/vision-two-box.mp4" poster="assets/posters/vision-two-box.jpg" aria-label="Autonomous two-box handling"></video>
+        </figure><figure class="experiment"><video id="player-vision-three-box" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/vision-three-box.mp4" poster="assets/posters/vision-three-box.jpg" aria-label="Autonomous three-box handling"></video>
+        </figure></div></div><div class="task-demo"><p><strong>Keep carrying while responding to the scene.</strong> The visual planner updates task targets for door interaction while the native arms retain the carried box. Whole-body control coordinates the resulting motion with load support and walking.</p><div class="video-row single"><figure class="experiment"><video id="player-vision-door" data-hardware controls controlslist="nodownload" muted loop playsinline preload="none"
+        src="assets/hardware/vision-door.mp4" poster="assets/posters/vision-door.jpg" aria-label="Autonomous carrying and door interaction"></video>
+        </figure></div></div>
+    <p>These demonstrations establish a connection between perception and coordinated action with an augmented body. Learning to choose and sequence such interactions across unfamiliar objects and environments is a next step toward broader autonomy.</p>
+</section>
+<section id="summary" class="research-section" aria-labelledby="summary-heading">
+    <h2 id="summary-heading">Toward Extensible Humanoids</h2>
+    <p>The human form offers compatibility with spaces and tools designed for people. Morphological augmentation invites us to retain that compatibility while expanding the ways a robot can interact with its surroundings. These findings support viewing humanoids as <strong>extensible morphologies</strong>, whose capabilities emerge through the interaction of body design, control, and environment. This connects to a broader perspective on embodied intelligence: the body shapes the actions available to a robot and the opportunities it has to learn.</p>
+    <p>Advancing physical AI also involves bringing knowledge of mechanics into the development of behavior. Physical models make dynamics and contact constraints explicit, helping guide the coordination of unfamiliar bodies. In our system, trajectory optimization supplies physically consistent motion references, while reinforcement learning develops feedback policies for their execution. This combination offers a way to develop behaviors for augmented morphologies that extend beyond those available from human motion demonstrations.</p>
+    <p>A broader opportunity is to develop morphology, physical models, and learning together. Future systems could learn which contacts to establish and how to distribute responsibilities across their limbs, while body design expands the interactions those decisions can realize. The value of an added limb would then be assessed through the useful capabilities it enables alongside its demands on mass, energy, and coordination. <strong>What kinds of bodies should we build to make useful, adaptive behavior easier to achieve?</strong> This question places morphological design alongside advances in learning and control as a direction for the future of physical AI.</p>
+    <p class="further-perspectives"><strong>Further perspectives.</strong> Matthew T. Mason’s essays on <a href="https://mtmason.com/should-robots-be-generalists-or-specialists/" target="_blank" rel="noopener noreferrer">generalists and specialists</a> and <a href="https://mtmason.com/the-next-robotics-revolution/" target="_blank" rel="noopener noreferrer">the future of robot design</a> invite a broader discussion of which bodies suit which tasks and environments. Humanoid SRL explores one part of that design space: retaining a humanoid foundation while extending its possibilities for physical interaction.</p>
+</section>
+<section id="behind-the-scenes" class="research-section lab-section" aria-labelledby="lab-heading">
+    <h2 id="lab-heading">Behind the Scenes</h2>
+    <p>A closer look at the robot’s scale, early tests, and repairs along the way.</p>
+    <div class="lab-gallery"><figure class="lab-item"><button class="lab-thumbnail" type="button"
+        data-media="lab-scale-standing" aria-haspopup="dialog" aria-label="Enlarge photograph: Reaching the raised SRL">
+        <img src="assets/lab-notes/scale-standing-poster.jpg" alt="A researcher stands on a small stool to reach the raised neck-mounted SRL, with another researcher beside the humanoid." loading="lazy" decoding="async"
+            width="1920" height="1280"></button>
+        <figcaption>Reaching the raised SRL</figcaption></figure><figure class="lab-item"><button class="lab-thumbnail" type="button"
+        data-media="lab-srl-repair" aria-haspopup="dialog" aria-label="Enlarge photograph: Repairing the SRL">
+        <img src="assets/lab-notes/srl-repair-poster.jpg" alt="The team repairs the detached SRL at the workbench." loading="lazy" decoding="async"
+            width="1920" height="1440"></button>
+        <figcaption>Repairing the SRL</figcaption></figure><figure class="lab-item"><button class="lab-thumbnail" type="button"
+        data-media="lab-door-tests" aria-haspopup="dialog" aria-label="Play video: Door-interaction testing">
+        <img src="assets/lab-notes/door-tests-poster.jpg" alt="The team tests a door interaction with the humanoid." loading="lazy" decoding="async"
+            width="960" height="720"><span class="lab-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 5 11 7-11 7Z"/></svg></span></button>
+        <figcaption>Door-interaction testing</figcaption></figure></div>
+    <div class="lab-links"><a href="behind-the-scenes.html">See all photos and videos <span aria-hidden="true">→</span></a></div>
+</section>
+<section id="citation" class="citation-section" aria-labelledby="citation-heading">
+    <h2 id="citation-heading">BibTeX</h2>
+    <div class="citation-content"><button id="copy-citation" type="button">Copy</button><span id="copy-status" class="sr-only" role="status" aria-live="polite"></span><pre><code id="bibtex">@misc{liu2026humanoidsrlaugmentinghumanoids,
+  title = {Humanoid SRL: Augmenting Humanoids with Supernumerary Limbs
+           for Coordinated Loco-Manipulation},
+  author = {Fukang Liu and Feiyang Wu and Paul Barsa and
+            Jaehwi Jang and Akshat Jain and Zhigen Zhao and
+            Yipu Chen and Zhaoyuan Gu and Nikhil Vemuri and
+            Anshul Chandaliya and Kaijie Zhu and Sean Lublinsky and
+            Matthew Zhu and Tony G. Chen and Ye Zhao},
+  year = {2026},
+  eprint = {2610.25628},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  url = {https://arxiv.org/abs/2610.25628}
+}</code></pre></div>
+</section>
+<section id="related" class="research-section related-work" aria-labelledby="related-heading">
+    <h2 id="related-heading">Related Work</h2>
+    <a class="related-project" href="https://opt2skill.github.io/" target="_blank" rel="noopener noreferrer">
+        <span><strong>Opt2Skill</strong><span>Imitating Dynamically-feasible Whole-Body Trajectories for Versatile Humanoid Loco-Manipulation</span></span>
+        <img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24">
+    </a>
+    <a class="related-project" href="https://opt2vla.github.io/" target="_blank" rel="noopener noreferrer">
+        <span><strong>Opt2VLA</strong><span>Force-Aware Vision-Language-Action for Contact-Rich Humanoid Whole-Body Manipulation</span></span>
+        <img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24">
+    </a>
+    <a class="related-project" href="https://lidar-learn-to-teach.github.io/" target="_blank" rel="noopener noreferrer">
+        <span><strong>Learn to Teach</strong><span>Sample-Efficient Privileged Learning for Humanoid Locomotion over Diverse Terrains</span></span>
+        <img src="assets/icons/arrow-up-right.svg" alt="" width="24" height="24">
+    </a>
+</section>
+</div>
+</div>
+</main>
+</div>
+<footer class="site-footer"><span>Humanoid SRL · Augmented humanoid loco-manipulation</span><a href="#paper">Back to overview ↑</a></footer>
+<details class="appearance-tuner" id="appearance-tuner" hidden>
+    <summary aria-label="Theme and background" title="Theme and background"><span class="appearance-sun"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></span><span class="appearance-moon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"/></svg></span></summary>
+    <div class="appearance-controls" role="region" aria-label="Theme and background">
+        <div class="theme-switch" role="group" aria-label="Color theme">
+            <button type="button" data-theme-choice="light" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><span>Light</span></button>
+            <button type="button" data-theme-choice="dark" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"/></svg><span>Dark</span></button>
+        </div>
+        <label for="background-blur"><span>Background blur <output id="background-blur-value" for="background-blur">10</output></span><input id="background-blur" type="range" min="0" max="10" step="1" value="10"></label>
+    </div>
+</details>
+<dialog id="render-dialog" aria-labelledby="render-title">
+    <div class="dialog-heading"><h2 id="render-title"></h2><button class="dialog-close" type="button" aria-label="Close media">×</button></div>
+    <p id="render-description" hidden></p>
+    <video id="render-player" controls controlslist="nodownload" muted playsinline preload="none"></video>
+    <img id="detail-image" alt="" hidden>
+    <p id="media-footer" hidden><span id="media-context"></span> <a id="render-download" hidden>Open full photo</a></p>
+</dialog>
+</body></html>

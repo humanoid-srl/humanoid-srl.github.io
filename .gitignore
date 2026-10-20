@@ -1,0 +1,5 @@
+*.mp4
+*.zip
+__pycache__/
+.DS_Store
+!site/assets/lab-notes/hands-on-srl-testing.mp4
